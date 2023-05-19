@@ -112,6 +112,10 @@
 
 }
 
+.footer-socmedia-link:hover {
+    background-color: rgba(174, 19, 50, 0.1)
+}
+
 
 
 .footer-address-link {
