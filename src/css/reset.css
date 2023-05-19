@@ -34,8 +34,23 @@ img {
   height: auto;
 }
 
+.section {
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 144px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section {
+    padding-bottom: 150px;
+  }
+}
+
 .container {
-  /* Phone styles & > */
   min-width: 320px;
   max-width: 375px;
   margin-left: auto;
