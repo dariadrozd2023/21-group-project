@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+
+    <!-- Fruits section -->
+    <symbol id="icon-btn" viewBox="0 0 34 32">
+      <path d="M34.231 4.741 29.49 0v23.704L5.786 0 2.23 3.556 25.934 27.26H2.23l4.741 4.741H34.23V4.742z" />
+    </symbol>
+  </defs>
+</svg>

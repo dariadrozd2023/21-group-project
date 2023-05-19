@@ -1,0 +1,185 @@
+@media only screen and (max-width: 767px) {
+  .card-set-item:nth-child(n + 7) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .card-set-item:nth-child(n + 9) {
+    display: none;
+  }
+}
+
+.product-list {
+  margin-bottom: 44px;
+}
+
+.card {
+  width: 335px;
+  padding: 64px 24px 24px;
+
+  border-radius: 20px;
+
+  background-color: #000000;
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .card {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 344px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .card {
+    width: 389px;
+  }
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.04em;
+
+  color: var(--body-light-txt-cl);
+
+  margin-bottom: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .card-title {
+    font-size: 32px;
+    line-height: 1.19;
+  }
+}
+
+.card-uppertitle {
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  color: var(--body-light-txt-cl);
+
+  margin-bottom: 4px;
+}
+@media only screen and (min-width: 768px) {
+  .card-uppertitle {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+.card-img {
+  margin: 0 auto;
+  margin-bottom: 6px;
+}
+
+.card-price-box {
+  width: 121px;
+  padding: 12px 24px;
+
+  background-color: var(--light-bg-cl);
+
+  border-radius: 200px;
+}
+@media only screen and (min-width: 768px) {
+  .card-price-box {
+    width: 136px;
+    padding: 12px 21px;
+  }
+}
+
+.card-price {
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+
+  color: var(--brand-cl);
+}
+@media only screen and (min-width: 768px) {
+  .card-price {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+/* BG CARD PRODUCTS */
+.strawberry {
+  background-color: #f8766b;
+}
+.banana {
+  background-color: #edd251;
+}
+.watermelon {
+  background-color: #9dc262;
+}
+.lime {
+  background-color: #bfd663;
+}
+.apple {
+  background-color: #e93f29;
+}
+.peach {
+  background-color: #db4f4b;
+}
+.plums {
+  background-color: #9b5366;
+}
+.orange {
+  background-color: #f47f4c;
+}
+.kiwi {
+  background-color: #98b37e;
+}
+/* END BG CARD PRODUCTS */
+
+.fruits-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 7px;
+  gap: 4px;
+
+  margin: 0 auto;
+
+  color: var(--body-light-txt-cl);
+
+  background-color: var(--btn-bg-cl);
+}
+@media only screen and (min-width: 768px) {
+  .fruits-btn {
+    padding: 38px 17px;
+  }
+}
+
+.fruits-btn:hover,
+.fruits-btn:focus {
+  color: var(--active-fill);
+  background-color: var(--light-bg-cl);
+}
+
+.fruits-btn-icon {
+  fill: currentColor;
+  align-self: flex-end;
+}
+
+.fruits-btn-txt {
+  display: block;
+
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: currentColor;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  transform: rotate(-14deg);
+}
+@media only screen and (min-width: 768px) {
+  .fruits-btn-txt {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
