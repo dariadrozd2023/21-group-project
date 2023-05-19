@@ -10,7 +10,8 @@
       <path d="M6.533 7.467C6.533 2.239 10.771-2 16-2s9.467 4.238 9.467 9.467h-4a5.467 5.467 0 0 0-10.934 0h-4zM23.467 12.8zm-16.934 0V7.467A9.467 9.467 0 0 1 16-2v4a5.467 5.467 0 0 0-5.467 5.467V12.8h-4zM16-2a9.467 9.467 0 0 1 9.467 9.467V12.8h-4V7.467A5.467 5.467 0 0 0 16 2v-4z"/>
     </symbol>
     <symbol id="icon-close-window" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M24 8 8 24M8 8l16 16"/>
+      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M24 8l-16 16"></path>
+      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M8 8l16 16"></path>
     </symbol>
     <symbol id="icon-facebook" viewBox="0 0 32 32">
       <path d="M19.52 4.64h.96v3.6h-1.2c-.48 0-.96 0-1.2.24s-.24.48-.24 1.04v1.28h2.64v3.04h-2.64v13.2h-4.08V13.76H11.6v-3.04h2.16V9.68c0-1.76.24-3.04.72-3.6.72-1.04 2.16-1.52 4.32-1.52.24.08.48.08.72.08z"/>
