@@ -1,0 +1,76 @@
+.hero {
+  background: #ae1332;
+}
+.hero-container {
+  max-width: 374px;
+}
+@media screen and (min-width: 375px) and(max-width:767px) {
+  .hero-container {
+    width: 375px;
+  }
+}
+.background {
+  height: 557px;
+  border-radius: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background\ 1girl.png);
+}
+.hero-text {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+
+  color: #ffffff;
+
+  /* text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1); */
+}
+.hero-btn {
+  width: 80px;
+  height: 80px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+
+  /* 
+display: flex;
+align-items: center;
+text-align: center; */
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: #ae1332;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  transform: rotate(-14deg);
+  border-radius: 50%;
+  border-color: transparent;
+}
+.hero-cards {
+}
+.card-text {
+}
+.top-card {
+}
+.top-card-text {
+}
+.hero-img {
+}
+.low-card-text {
+}
+.tag-list {
+}
+.tags {
+}
+.hero-teg {
+}
+
+.low-card {
+}
