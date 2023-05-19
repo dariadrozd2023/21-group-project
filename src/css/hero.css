@@ -54,23 +54,107 @@ text-align: center; */
   border-color: transparent;
 }
 .hero-cards {
+  max-width: 279px;
+  margin: auto;
+  margin-top: 71px;
 }
 .card-text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  margin-bottom: 44px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .top-card {
+  background-color: #a4cb66;
+  height: 387px;
+  border-radius: 500px;
+  padding: 28px 25px 40px;
+  margin-bottom: 44px;
 }
+
 .top-card-text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  /* padding: 28px 25px 40px; */
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .hero-img {
+  display: block;
+  width: 200px;
+  height: 179px;
+  margin: auto;
 }
 .low-card-text {
+  width: 155px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  margin: auto;
 }
 .tag-list {
 }
 .tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+  /* flex-basis: calc((100%-8) / 2); */
+  margin-bottom: 44px;
+  /* max-width: 265px; */
+  gap: 8px;
+  /* margin-left: auto; */
+  align-content: center;
+  justify-content: center;
 }
 .hero-teg {
+  padding: 12px 32px;
+  width: 132px;
+  height: 38px;
+  border: 1px solid #ffffff;
+  border-radius: 1000px;
+
+  justify-content: center;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
 .low-card {
+  background-color: #f5ce13;
 }
