@@ -1,14 +1,18 @@
+.footer {
+    background-color: #ffffff;
+}
+
 .footer-container {
     display: flex;
     flex-direction: column;
     gap: 44px;
     padding-top: 80px;
     padding-bottom: 80px;
-    color: #AE1332;
-    font-family: 'DM Sans';
+    color: var(--brand-cl);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
+    letter-spacing: -0.04em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -45,6 +49,7 @@
 }
 
 .link.logo {
+    color: var(--brand-cl);
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -53,7 +58,6 @@
 .footer-logo-text {
     font-style: normal;
     font-weight: 700;
-    letter-spacing: -0.04em;
     text-transform: uppercase;
 }
 
@@ -65,8 +69,12 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+
 }
 
+.footer-list-link {
+    color: var(--brand-cl);
+}
 
 
 .footer-icon {
@@ -83,13 +91,17 @@
 @media only screen and (min-width: 768px) {
 
     .footer-contacts-block {
-        padding-top: 28px;
+        margin-top: 28px;
+    }
+
+    .footer-list-icons {
+        justify-content: flex-start;
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .footer-contacts-block {
-        padding-top: 0px;
+        margin-top: 0px;
     }
 
     .footer-list {
@@ -112,7 +124,8 @@
 
 }
 
-.footer-socmedia-link:hover {
+.footer-socmedia-link:hover,
+.footer-socmedia-link:focus {
     background-color: rgba(174, 19, 50, 0.1)
 }
 
@@ -124,6 +137,18 @@
     justify-content: center;
     gap: 14px;
     align-items: center;
+}
+
+.footer-address-tel {
+    color: var(--brand-cl);
+    letter-spacing: 0;
+}
+
+.footer-address-text {
+    width: 140px;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: -0.02em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -146,5 +171,15 @@
 
     .footer-address-link {
         gap: 20px;
+    }
+
+    .footer-address-text {
+        text-align: left;
+        width: 180px;
+
+    }
+
+    .footer-address-postcode {
+        white-space: nowrap;
     }
 }
