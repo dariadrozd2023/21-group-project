@@ -1,0 +1,53 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./common.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./work-it.css');
+@import url('./fruits.css');
+@import url('./contacts.css');
+@import url('./footer.css');
+@import url('./your-order.css');
+@import url('./thank-you.css');
+@import url('./mobile-menu.css');
+
+:root {
+  /**
+      |============================
+      | FONTS
+      |============================
+    */
+  --main-font: 'DM Sans', sans-serif;
+
+  /**
+    |============================
+    | COLORS
+    |============================
+  */
+
+  --brand-cl: #ae1332;
+
+  /* Text */
+  --body-light-txt-cl: #ffffff;
+
+  /* Bg */
+  --light-bg-cl: #ffffff;
+  --btn-bg-cl: #9dc262;
+
+  /* Icon */
+  --active-fill: #9dc262;
+
+  /**
+    |============================
+    | OTHERS
+    |============================
+  */
+
+  --item: 1;
+  --len: 14px;
+}
