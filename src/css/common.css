@@ -6,6 +6,9 @@ body {
 
   background-color: var(--brand-cl);
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 
 .section {
   margin-bottom: 80px;

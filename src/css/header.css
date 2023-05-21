@@ -1,0 +1,31 @@
+/* іконка кошика та іконка для відкриття/закриття моб меню то дві різні кнопки 
+(бо різний функціонал абсолютно: кнопка з кошиком переміщає на секцію fruits (або робить шось інше), 
+а кнопка з моб меню власне відкриває моб меню на мобілці)
+
+кнопка з іконкою кошика видна коли десктоп та планшет (кнопка для меню - display: none)
+кнопка з іконкою меню видна, коли мобілка (кнопка для кошика - display: none)
+
+кнопка для меню має мати дві іконки (іконка для відкриття меню та закриття меню) */
+
+.header {
+  height: 50px;
+  background-color: var(--light-bg-cl);
+}
+
+.mobile-menu-icon-open {
+  fill: #ae1332;
+}
+.mobile-menu-icon-close {
+  stroke: #ae1332;
+}
+
+.mobile-menu-button .mobile-menu-icon-close {
+  display: none;
+}
+
+.mobile-menu-button.is-open .mobile-menu-icon-close {
+  display: block;
+}
+.mobile-menu-button.is-open .mobile-menu-icon-open {
+  display: none;
+}
