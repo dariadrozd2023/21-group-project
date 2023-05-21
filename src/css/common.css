@@ -1,0 +1,167 @@
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+
+  color: var(--body-light-txt-cl);
+
+  background-color: var(--brand-cl);
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    margin-bottom: 144px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .section {
+    margin-bottom: 150px;
+  }
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+  margin-bottom: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+
+.section-desc {
+  max-width: 334px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+
+  text-align: center;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .section-desc {
+    max-width: 547px;
+  }
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  outline: 2px solid yellow;
+  outline-offset: -2px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.btn {
+  display: block;
+  min-width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    min-width: 114px;
+    height: 114px;
+  }
+}
+
+/**
+  |============================
+  | CARD SET
+  |============================
+*/
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--len);
+}
+@media only screen and (min-width: 768px) {
+  .card-set {
+    --len: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .card-set {
+    --len: 24px;
+  }
+}
+
+.card-set-item {
+  width: calc((100% - var(--len) * (var(--item) - 1)) / var(--item));
+}
+@media only screen and (min-width: 768px) {
+  .card-set-item {
+    --item: 2;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .card-set-item {
+    --item: 3;
+  }
+}
+
+/* Modal Windows */
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+.modal.active,
+.overlay.active {
+  /* Открываем подложку и окно  */
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+}
