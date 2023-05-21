@@ -1,25 +1,37 @@
 <div class="container">
     <section class="contacts-section section">
-        <div class="images-box">
+        <div class="contacts-box">
             <h1 class="contacts-title">FRESH HARVEST BOX HAS GOT YOU COVERED</h1>
             <ul class="contacts-list">
                 <li>
-                    <img src="../img/img.contacts/img.contacts.mobile@1x.jpg" alt="" width="335px" height="476px">
+                    <picture>
+                    <!-- Desktop screen -->
+                    <source media="(min-width: 1255px)" srcset="./img/contacts/img.contacts.desktop1@1x.png 1x, ../img/contacts/img.contacts.desktop1@2x.png 2x" type="image/jpg">
+                    <!-- Tablet screen -->
+                    <source media="(min-width: 768px)" srcset="./img/contacts/img.contacts.tablet1@1x.png 1x, ../img/contacts/img.contacts.tablet1@2x.png 2x" type="image/jpg">
+                    <!-- Phone screen -->
+                    <source media="(max-width: 767px)" srcset="./img/contacts/img.contacts.mobile@1x.png 1x, ../img/contacts/img.contacts.mobile@2x.png 2x" type="image/jpg">
+                    <img src="./img/contacts/img.contacts.mobile@1x.png" alt="Melon image">   
+                    </picture>
                 </li>
                 <li class="contacts-image">
-                    <img src="../img/img.contacts/img.contacts.tablet2@1x.jpg" alt="" width="344px" height="480px">
+                    <picture>
+                    <!-- Desktop screen -->
+                    <source media="(min-width: 1255px)" srcset="../img/contacts/img.contacts.desktop2@1x.png 1x, ../img/contacts/img.contacts.desktop2@2x.png 2x" type="image/jpg">
+                    <!-- Tablet screen -->
+                    <source media="(min-width: 768px)" srcset="../img/contacts/img.contacts.tablet2@1x.png 1x, ../img/contacts/img.contacts.tablet2@2x.png 2x" type="image/jpg">
+                    <img src="../img/contacts/img.contacts.tablet2@1x.png" alt="Blueberry image">
+                    </picture>
                 </li>
             </ul>
         </div>
         <p class="contacts-text">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
-        <form class="contacts-form">
-            <input type="email" name="comtacts-email" class="contacts-input" placeholder="Enter email...">
-            <button type="submit" class="contacts-button"></button>
+        <!-- CONTACTS FORM -->
+        <form class="contacts-form" autocomplete="off">
+            <div class="contacts-form-box">
+                <input type="email" name="comtacts-email" class="contacts-input" placeholder="Enter email..."  required minlength="2">
+                <button type="submit" class="contacts-button">Send</button>
+            </div>
         </form>
-        <!-- <form class="footer-form" autocomplete="off">
-            <input type="email" class="footer-form-input" name="footer-email" id="footer-email" required minlength="2" placeholder="Email">
-            <button type="submit" class="footer-form-button">Subscribe
-            </button>
-        </form> -->
     </section>
 </div>
