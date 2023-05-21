@@ -2,43 +2,95 @@
   background: #ae1332;
 }
 .hero-container {
-  max-width: 374px;
+  padding-top: 104px;
 }
 @media screen and (min-width: 375px) and(max-width:767px) {
   .hero-container {
-    width: 375px;
+    /* width: 375px; */
   }
 }
+
 .background {
-  height: 557px;
+  position: relative;
+  height: 509px;
+  margin: auto;
   border-radius: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(./img/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background\ 1girl.png);
+  background-image: url(../img/hero/hero-girl-tab@1.png);
+  /* border-style: solid;
+  border-width: rgba(255, 255, 255, 1) rgba(255, 255, 255, 0.44)
+    rgba(255, 255, 255, 0); */
 }
+
+/* url(../img/hero/imagebananas-background-mob@1.png),
+    url(../img/hero/imagestrawberry-background-mob@1.png) */
+@media screen and (max-width: 374px) {
+  .background {
+    background-image: url(../img/hero/hero-girl-mob@1.png);
+  }
+}
+/* @media only screen and (min-width: 768px) {
+  .background {
+    margin: auto;
+    width: 486px;
+    height: 742px;
+  }
+} */
 .hero-text {
-  text-transform: uppercase;
-  text-align: center;
-  font-family: 'DM Sans';
+  position: absolute;
+  top: -10%;
+  left: 0;
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
 
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .hero-text {
+    left: -22%;
+    width: 704px;
+    font-size: 50px;
+    line-height: 1.08;
+  }
+  .background {
+    width: 486px;
+    height: 702px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-text {
+    left: -47%;
 
-  /* text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1); */
+    width: 898px;
+    font-size: 64px;
+    line-height: 1;
+  }
+  .background {
+    width: 452px;
+    height: 702px;
+  }
 }
 .hero-btn {
+  position: absolute;
+  left: 38%;
+  top: 93%;
   width: 80px;
   height: 80px;
+  padding: 0;
+  border: 0;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-
   /* 
 display: flex;
 align-items: center;
@@ -53,11 +105,27 @@ text-align: center; */
   border-radius: 50%;
   border-color: transparent;
 }
+
+@media only screen and (min-width: 768px) {
+  .hero-btn {
+    width: 114px;
+    height: 114px;
+    font-size: 28px;
+  }
+}
+
+.hero-btn:hover {
+  color: #a4cb66;
+}
+.hero-btn:focus {
+  color: #a4cb66;
+}
 .hero-cards {
   max-width: 279px;
   margin: auto;
   margin-top: 71px;
 }
+
 .card-text {
   font-family: 'DM Sans';
   font-style: normal;
@@ -74,14 +142,44 @@ text-align: center; */
 
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
+@media only screen and (min-width: 768px) {
+  .card-text {
+    width: 279px;
+    margin-bottom: 45px;
+  }
+  .hero-cards {
+    max-width: 704px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .top-card {
   background-color: #a4cb66;
   height: 387px;
   border-radius: 500px;
-  padding: 28px 25px 40px;
-  margin-bottom: 44px;
+  padding: 28px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-bottom: 44px; */
 }
-
+@media only screen and (min-width: 768px) {
+  .top-card {
+    margin-left: 32px;
+  }
+  .tag-list {
+    width: 281px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .low-card {
+    margin-right: 34px;
+    margin-left: 0;
+  }
+}
 .top-card-text {
   font-family: 'DM Sans';
   font-style: normal;
@@ -96,11 +194,15 @@ text-align: center; */
   color: #ffffff;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
+.thamb-hero {
+}
 .hero-img {
-  display: block;
-  width: 200px;
-  height: 179px;
+  width: 239px;
+  height: 172px;
   margin: auto;
+}
+.hero-imglow {
+  height: 187px;
 }
 .low-card-text {
   width: 155px;
@@ -118,19 +220,17 @@ text-align: center; */
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   margin: auto;
 }
-.tag-list {
-}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 44px;
-  /* flex-basis: calc((100%-8) / 2); */
+  margin-top: 44px;
   margin-bottom: 44px;
-  /* max-width: 265px; */
   gap: 8px;
-  /* margin-left: auto; */
   align-content: center;
   justify-content: center;
+  padding-left: 0;
 }
 .hero-teg {
   padding: 12px 32px;
@@ -157,4 +257,9 @@ text-align: center; */
 
 .low-card {
   background-color: #f5ce13;
+}
+@media only screen and (min-width: 768px) {
+  .hero-text {
+    width: auto;
+  }
 }
