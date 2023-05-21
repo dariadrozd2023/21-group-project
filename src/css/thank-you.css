@@ -1,21 +1,13 @@
 .backdrop-thank-you {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .window-thank-you {
   position: relative;
   padding: 40px 0 40px 0;
+  z-index: 30;
 
   border-radius: 20px;
   max-width: 335px;
@@ -84,7 +76,7 @@
   width: 24px;
   height: 24px;
 
-  stroke: #ffffff;
+  stroke: var(--body-light-txt-cl);
 }
 
 @media screen and (min-width: 768px) {
