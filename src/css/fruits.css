@@ -14,6 +14,8 @@
 }
 
 .card {
+  position: relative;
+
   width: 335px;
   padding: 64px 24px 24px;
 
@@ -60,8 +62,6 @@
   letter-spacing: -0.02em;
 
   color: var(--body-light-txt-cl);
-
-  margin-bottom: 4px;
 }
 @media only screen and (min-width: 768px) {
   .card-uppertitle {
@@ -71,13 +71,24 @@
 }
 
 .card-img {
-  margin: 0 auto;
-  margin-bottom: 6px;
+  position: absolute;
+
+  top: 126px;
+  left: calc((100% - 295px) / 2);
+}
+@media only screen and (min-width: 768px) {
+  .card-img {
+    top: 136px;
+  }
 }
 
 .card-price-box {
+  position: relative;
+  z-index: 1;
+
   display: inline-block;
   padding: 12px 24px;
+  margin-top: 281px;
 
   background-color: var(--light-bg-cl);
 
@@ -86,6 +97,7 @@
 @media only screen and (min-width: 768px) {
   .card-price-box {
     padding: 12px 21px;
+    margin-top: 261px;
   }
 }
 
