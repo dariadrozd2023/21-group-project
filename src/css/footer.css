@@ -1,4 +1,5 @@
 .footer {
+    margin-bottom: 0;
     background-color: #ffffff;
 }
 
@@ -145,11 +146,23 @@
 }
 
 .footer-address-text {
+    display: block;
     width: 140px;
     font-style: normal;
     text-align: center;
     letter-spacing: -0.02em;
+    color: var(--brand-cl);
 }
+
+.footer-list-link:hover,
+.footer-list-link:focus,
+.footer-address-tel:hover,
+.footer-address-tel:focus,
+.footer-address-text:hover,
+.footer-address-text:focus {
+    color: var(--active-fill);
+}
+
 
 @media only screen and (min-width: 768px) {
     .footer-socmedia-link {
