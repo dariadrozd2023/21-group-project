@@ -1,0 +1,112 @@
+<div class="backdrop js-overlay-modal">
+    <div class="modal-order">
+        <button class="modal-close-btn js-modal-close">
+            <svg class="modal-close-btn-icon" width="28" height="28">
+                <use href="./img/icons/icons.svg#icon-icon_close"></use>
+            </svg>
+        </button>
+        <p class="modal-order-text">Your Order</p>
+        <ul class="modal-basket-list list">
+            <li class="modal-basket-item brown-item">
+                <div class="modal-basket-text-wrap">
+                    <p class="modal-basket-text">Strawberry Basket</p>
+                    <p class="modal-bascet-desk">Plant</p>
+
+                </div>
+                <picture class="basket-img">
+                    <!-- Desktop screen -->
+                    <source media="(min-width: 1280px)"
+                        srcset="../img/opt-img/pop-up/strawberry-basket-desk-pop-w173@1x.png 1x, ../img/opt-img/pop-up/strawberry-basket-desk-pop-w173@2x.png 2x"
+                        type="image/jpg" />
+                    <!-- Tablet screen -->
+
+                    <source media="(min-width: 768px)"
+                        srcset="../img/opt-img/pop-up/strawberry-basket-tabl-pop-w133@1x.png 1x, ../img/opt-img/pop-up/strawberry-basket-tabl-pop-w133@2x.png 2x"
+                        type="image/jpg" />
+                    <!-- Mobile screen -->
+                    <source media="(max-width: 767px)"
+                        srcset="../img/opt-img/pop-up/strawberry-basket-mob-pop-w88@1x.png 1x, ../img/opt-img/pop-up/strawberry-basket-mob-pop-w88@2x.png 2x"
+                        type="image/png" />
+                    <img src="../img/opt-img/pop-up/strawberry-basket-mob-pop-w88@1x.png" alt="strawberry" width="88"
+                        height="95" loading="lazy" />
+                </picture>
+
+                <label for="strawberry-basket" class="modal-basket-label"><input type="checkbox" name="basket"
+                        id="strawberry-basket" class="modal-basket-input visually-hidden"><span
+                        class="modal-basket-checkbox"></span></input></label>
+            </li>
+            <li class="modal-basket-item yellow-item">
+                <div class="modal-basket-text-wrap">
+                    <p class="modal-basket-text">Apple Basket</p>
+                    <p class="modal-bascet-desk">Plant</p>
+                </div>
+                <picture class="basket-img">
+                    <!-- Desktop screen -->
+                    <source media="(min-width: 1280px)"
+                        srcset="../img/opt-img/pop-up/apples-basket-desk-pop-w229@1x.png 1x, ../img/opt-img/pop-up/apples-basket-desk-pop-w229@2x.png 2x"
+                        type="image/png" />
+                    <!-- Tablet screen -->
+
+                    <source media="(min-width: 768px)"
+                        srcset="../img/opt-img/pop-up/apples-basket-tabl-pop-w172@1x.png 1x, ../img/opt-img/pop-up/apples-basket-tabl-pop-w172@2x.png 2x"
+                        type="image/png" />
+                    <!-- Mobile screen -->
+                    <source media="(max-width: 767px)"
+                        srcset="../img/opt-img/pop-up/apples-basket-mob-pop-w106@1x.png 1x, ../img/opt-img/pop-up/apples-basket-mob-pop-w106@2x.png 2x"
+                        type="image/jpg" />
+                    <img src="../img/opt-img/pop-up/apples-basket-mob-pop-w106@1x.png" alt="apple" width="106"
+                        height="95" loading="lazy" />
+                </picture>
+
+
+
+                <label for="apple-basket" class="modal-basket-label"><input type="checkbox" name="basket"
+                        id="apple-basket" class="modal-basket-input visually-hidden"><span
+                        class="modal-basket-checkbox"></span></input></label>
+
+            </li>
+            <li class="modal-basket-item green-item">
+                <div class="modal-basket-text-wrap">
+                    <p class="modal-basket-text">Fruits Basket</p>
+                    <p class="modal-bascet-desk">Plant</p>
+                </div>
+                <picture class="basket-img">
+                    <!-- Desktop screen -->
+                    <source media="(min-width: 1280px)"
+                        srcset="../img/opt-img/pop-up/mix-fruits-desk-pop-w229@1x.png 1x, ../img/opt-img/pop-up/mix-fruits-desk-pop-w229@2x.png 2x"
+                        type="image/png" />
+                    <!-- Tablet screen -->
+
+                    <source media="(min-width: 768px)"
+                        srcset="../img/opt-img/pop-up/mix-fruits-tabl-pop-w172@1x.png 1x, ../img/opt-img/pop-up/mix-fruits-tabl-pop-w172@2x.png 2x"
+                        type="image/png" />
+                    <!-- Mobile screen -->
+                    <source media="(max-width: 767px)"
+                        srcset="../img/opt-img/pop-up/mix-fruits-mob-pop-w107@1x.png 1x, ../img/opt-img/pop-up/mix-fruits-mob-pop-w107@2x.png 2x"
+                        type="image/jpg" />
+                    <img src="../img/opt-img/pop-up/mix-fruits-mob-pop-w107@1x.png" alt="fruits" width="107" height="95"
+                        loading="lazy" />
+                </picture>
+
+
+
+                <label for="fruits-basket" class="modal-basket-label"><input type="checkbox" name="basket"
+                        id="fruits-basket" class="modal-basket-input visually-hidden"><span
+                        class="modal-basket-checkbox"></span></input></label>
+
+            </li>
+        </ul>
+        <form autocomplete="on" class="modal-fruits-form">
+            <div class="form-wrapper"><input type="text" class="modal-fruit-input" placeholder="Enter full name..."
+                    name="name" id="name" pattern="([a-zA-Z]+\s){1,}([a-zA-Z]+)">
+                <input type="text" class="modal-fruit-input" placeholder="Enter email..." type="email" name="email"
+                    id="email" pattern="/^[\w\.-]+@[\w\.-]+\.\w+$/">
+                <input type="text" required class="modal-fruit-input" placeholder="Enter card..." name="type-text"
+                    id="card" pattern="[0-9]{,12}" maxlength="12">
+                <textarea name="comment" id="comment" cols="30" rows="10" class="modal-fruits-textaria"
+                    placeholder="Enter comments..."></textarea>
+            </div>
+            <button class="modal-fruits-button" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
