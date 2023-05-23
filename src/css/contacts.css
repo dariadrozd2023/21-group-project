@@ -16,7 +16,9 @@
 
   transform: translateY(-53%);
 }
-
+.contacts-list > li{
+  z-index: -1;
+}
 .contacts-box{
   position: relative;
 }
@@ -89,7 +91,7 @@
   top: 0;
   right: 0;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim-active-bg), color var(--anim-active-txt);
 }
 
 .contacts-button:hover,

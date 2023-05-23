@@ -1,8 +1,40 @@
+/**
+  |============================
+  | Animation
+  |============================
+*/
+
+/* Title */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 .hero {
   background: #ae1332;
 }
 .hero-container {
-  padding-top: 104px;
+  padding-top: 154px;
   margin-bottom: 150px;
 }
 
@@ -72,7 +104,9 @@
   }
 }
 /* url(../img/hero/imagebananas-background-mob@1.png),
-    url(../img/hero/imagestrawberry-background-mob@1.png) */
+    url(../img/hero/imagestrawberry-background-mob@1.png) 
+*/
+ 
 .hero-text {
   position: absolute;
   top: -10%;
@@ -86,6 +120,9 @@
   color: #ffffff;
 
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 @media screen and (min-width: 768px) {
@@ -115,34 +152,51 @@
   border: 0;
   padding: 0;
 
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
-
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-
   color: #ae1332;
 
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  transform: rotate(-14deg);
   border-radius: 50%;
   border-color: transparent;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .hero-btn {
     width: 114px;
     height: 114px;
+  }
+}
+.hero-btn:hover , 
+.hero-btn:focus {
+  color: #a4cb66;
+}
+
+.hero-btn-txt{
+  display: block;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: currentColor;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  transform: rotate(-14deg);
+
+  transition: color var(--anim-active-txt);
+}
+@media screen and (min-width: 768px) {
+  .hero-btn-txt{
     font-size: 28px;
     line-height: 1;
   }
 }
-.hero-btn:hover {
-  color: #a4cb66;
+
+.hero-btn-txt:hover ,
+.hero-btn-txt:focus{
+  color: currentColor;
 }
-.hero-btn:focus {
-  color: #a4cb66;
-}
+
 .hero-cards {
   max-width: 279px;
   margin: auto;

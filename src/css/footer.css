@@ -75,6 +75,8 @@
 
 .footer-list-link {
     color: var(--brand-cl);
+
+    transition: color var(--anim-active-txt);
 }
 
 
@@ -123,6 +125,7 @@
     justify-content: center;
     align-items: center;
 
+    transition: background-color var(--anim-active-bg);
 }
 
 .footer-socmedia-link:hover,
@@ -143,6 +146,8 @@
 .footer-address-tel {
     color: var(--brand-cl);
     letter-spacing: 0;
+
+    transition: color var(--anim-active-txt);
 }
 
 .footer-address-text {
@@ -152,6 +157,8 @@
     text-align: center;
     letter-spacing: -0.02em;
     color: var(--brand-cl);
+
+    transition: color var(--anim-active-txt);
 }
 
 .footer-list-link:hover,
@@ -160,7 +167,7 @@
 .footer-address-tel:focus,
 .footer-address-text:hover,
 .footer-address-text:focus {
-    color: var(--active-fill);
+    color: var(--active-txt-cl);
 }
 
 

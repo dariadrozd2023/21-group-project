@@ -8,6 +8,11 @@
 кнопка для меню має мати дві іконки (іконка для відкриття меню та закриття меню) */
 
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
 
@@ -41,6 +46,13 @@
 
   line-height: 1.29;
   letter-spacing: -0.04em;
+
+  transition: color var(--anim-active-txt);
+}
+
+.header-link-nav:hover ,
+.header-link-nav:focus{
+color: var(--active-txt-cl);
 }
 
 .header-logo{
@@ -48,7 +60,8 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: #ae1332;
+
+  color: var(--brand-cl);
 }
 
 @media only screen and (min-width: 768px) {
