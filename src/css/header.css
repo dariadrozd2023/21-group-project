@@ -8,24 +8,141 @@
 кнопка для меню має мати дві іконки (іконка для відкриття меню та закриття меню) */
 
 .header {
-  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--light-bg-cl);
 }
-
-.mobile-menu-icon-open {
-  fill: #ae1332;
-}
-.mobile-menu-icon-close {
-  stroke: #ae1332;
-}
-
-.mobile-menu-button .mobile-menu-icon-close {
+.heder-nav{
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .heder-nav{
+    display: block;
+}
+  }
+  
+@media screen and (min-width: 768px) {
+  .heder-nav{
+    display: block;
+    margin-left: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+}
 
-.mobile-menu-button.is-open .mobile-menu-icon-close {
+
+.heder-btn{
+  display: none;
+}
+.heder-container {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+ 
+}
+
+@media screen and (min-width: 1280px) {
+  .heder-container{
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-tablet-position{
+    display: flex;
+    gap: 94px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-tablet-position{
+    display: flex;
+    gap: 322px;
+  }
+}
+
+.heder-link{
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .heder-link{
+    margin: 0;
+}
+}
+
+.nav-list-link{
+  font-weight: 400;
+font-size: 14px;
+line-height: calc(18/14);
+letter-spacing: -0.04em;
+color: var(--brand-cl);
+}
+.nav-icon-logo{
+  fill: var(--brand-cl);
+}
+.nav-logo-text{
+  
+  margin-left: 8px;
+font-weight: 700;
+line-height: calc(18/14);
+align-items: center;
+text-align: center;
+letter-spacing: -0.04em;
+text-transform: uppercase;
+
+color: var(--brand-cl);
+}
+.mobile-menu-button{
+  
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  margin-right: 2px;
+}
+.heder-mobile-market{
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .heder-mobile-market{
+    padding: 0;
+    margin-right: 32px;
+    display: block;
+    fill: var(--brand-cl);
+  }
+}
+
+.heder-mobile-menu-icon{
+  fill: var(--brand-cl);
+  margin-right: 20px;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .heder-mobile-menu-icon{
+display: none;
+  }
+}
+.mobile-menu-button.is-open
+.mobile-menu-icon-open{
+  display: none;
+}
+.mobile-menu-button.is-open.mobile-menu-icon-close{
+display: block;
+}
+.mobile-menu-button.mobile-menu-icon-close{
+  display: none;
+}
+.mobile-menu-button.is-open
+.mobile-menu-icon-close{
   display: block;
-}
-.mobile-menu-button.is-open .mobile-menu-icon-open {
-  display: none;
+  stroke: var(--brand-cl);
 }
