@@ -34,6 +34,7 @@
 
   /* Text */
   --body-light-txt-cl: #ffffff;
+  --active-txt-cl: #A4CB66;
 
   /* Bg */
   --light-bg-cl: #ffffff;
@@ -50,4 +51,9 @@
 
   --item: 1;
   --len: 14px;
+
+  /* Animation */
+
+  --anim-active-txt: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --anim-active-bg: 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }

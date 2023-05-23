@@ -163,6 +163,8 @@
   color: var(--body-light-txt-cl);
 
   background-color: var(--btn-bg-cl);
+
+  transition: background-color var(--anim-active-bg), color var(--anim-active-txt);
 }
 @media only screen and (min-width: 768px) {
   .fruits-btn {
