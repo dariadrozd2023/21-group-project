@@ -8,141 +8,120 @@
 кнопка для меню має мати дві іконки (іконка для відкриття меню та закриття меню) */
 
 .header {
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   background-color: var(--light-bg-cl);
 }
-.heder-nav{
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .heder-nav{
-    display: block;
-}
-  }
-  
-@media screen and (min-width: 768px) {
-  .heder-nav{
-    display: block;
-    margin-left: 32px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .nav-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-  }
-}
 
-
-.heder-btn{
-  display: none;
-}
-.heder-container {
-  padding: 0;
+.header-containet{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  height: 50px;
- 
+  /* justify-content: space-between; */
 }
 
-@media screen and (min-width: 1280px) {
-  .heder-container{
-    justify-content: space-between;
-  }
+.header-nav{
+  display: none;
 }
-@media screen and (min-width: 768px) {
-  .header-tablet-position{
-    display: flex;
-    gap: 94px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .header-tablet-position{
-    display: flex;
-    gap: 322px;
+
+@media only screen and (min-width: 768px) {
+   .header-nav{
+    display: block;
   }
 }
 
-.heder-link{
-  margin-left: 20px;
+.header-list-nav{
   display: flex;
   justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .heder-link{
-    margin: 0;
-}
+  gap: 16px;
 }
 
-.nav-list-link{
-  font-weight: 400;
-font-size: 14px;
-line-height: calc(18/14);
-letter-spacing: -0.04em;
-color: var(--brand-cl);
-}
-.nav-icon-logo{
-  fill: var(--brand-cl);
-}
-.nav-logo-text{
-  
-  margin-left: 8px;
-font-weight: 700;
-line-height: calc(18/14);
-align-items: center;
-text-align: center;
-letter-spacing: -0.04em;
-text-transform: uppercase;
+.header-link-nav{
+  color: var(--brand-cl);
 
-color: var(--brand-cl);
+  line-height: 1.29;
+  letter-spacing: -0.04em;
 }
-.mobile-menu-button{
-  
+
+.header-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #ae1332;
+}
+
+@media only screen and (min-width: 768px) {
+   .header-logo{
+    margin-left: 94px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .header-logo{
+    margin-left: 322px;
+  }
+}
+
+.header-logo-icon,
+.header-basket-icon,
+.mobile-menu-icon-open{
+  fill: #ae1332;
+}
+
+.header-text-wrapper{
+  font-weight: 700;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.header-btn-wrapper{
+  margin-left: auto;
+}
+
+.header-button{
   padding: 0;
   border: none;
-  background-color: inherit;
-  margin-right: 2px;
+  background-color: transparent;
 }
-.heder-mobile-market{
+
+.basket-button{
   display: none;
 }
-@media screen and (min-width: 768px) {
-  .heder-mobile-market{
-    padding: 0;
-    margin-right: 32px;
-    display: block;
-    fill: var(--brand-cl);
+
+@media only screen and (min-width: 768px) {
+  .basket-button{
+    display: flex;
   }
 }
 
-.heder-mobile-menu-icon{
-  fill: var(--brand-cl);
-  margin-right: 20px;
-  padding: 0;
+
+
+
+
+
+.mobile-menu-icon-close {
+  stroke: #ae1332;
 }
-@media screen and (min-width: 768px) {
-  .heder-mobile-menu-icon{
-display: none;
+
+   .mobile-menu-button{
+    display: none;
+  }
+
+@media only screen and (max-width: 767px) {
+   .mobile-menu-button{
+    display: flex;
   }
 }
-.mobile-menu-button.is-open
-.mobile-menu-icon-open{
+
+.mobile-menu-button .mobile-menu-icon-close {
   display: none;
 }
-.mobile-menu-button.is-open.mobile-menu-icon-close{
-display: block;
-}
-.mobile-menu-button.mobile-menu-icon-close{
-  display: none;
-}
-.mobile-menu-button.is-open
-.mobile-menu-icon-close{
+
+.mobile-menu-button.is-open .mobile-menu-icon-close {
   display: block;
-  stroke: var(--brand-cl);
+}
+.mobile-menu-button.is-open .mobile-menu-icon-open {
+  display: none;
 }
