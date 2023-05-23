@@ -1,12 +1,3 @@
-/* іконка кошика та іконка для відкриття/закриття моб меню то дві різні кнопки 
-(бо різний функціонал абсолютно: кнопка з кошиком переміщає на секцію fruits (або робить шось інше), 
-а кнопка з моб меню власне відкриває моб меню на мобілці)
-
-кнопка з іконкою кошика видна коли десктоп та планшет (кнопка для меню - display: none)
-кнопка з іконкою меню видна, коли мобілка (кнопка для кошика - display: none)
-
-кнопка для меню має мати дві іконки (іконка для відкриття меню та закриття меню) */
-
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -17,7 +8,6 @@
 .header-containet{
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .header-nav{
@@ -41,6 +31,11 @@
 
   line-height: 1.29;
   letter-spacing: -0.04em;
+}
+
+.header-link-nav:hover,
+.header-link-nav:focus{
+  color: var(--active-fill);
 }
 
 .header-logo{
@@ -94,6 +89,12 @@
   .basket-button{
     display: flex;
   }
+}
+
+.basket-button:hover .header-basket-icon{
+  background-color: rgba(174, 19, 50, 0.1);
+  border: 1px solid #AE1332;
+  border-radius: 10px;
 }
 
 
