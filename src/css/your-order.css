@@ -37,6 +37,9 @@
 
   background-color: #ffffff;
   border-radius: 20px;
+
+  background-image: url(../img/opt-img/pop-up/girl-with-banana-tabl-w469@1x.png);
+  max-width: 395px;
 }
 @media only screen and (max-width: 474px) {
   .modal-order {

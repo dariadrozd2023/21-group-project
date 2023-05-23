@@ -8,15 +8,111 @@
 кнопка для меню має мати дві іконки (іконка для відкриття меню та закриття меню) */
 
 .header {
-  height: 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   background-color: var(--light-bg-cl);
 }
 
-.mobile-menu-icon-open {
+.header-containet{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.header-nav{
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+   .header-nav{
+    display: block;
+  }
+}
+
+.header-list-nav{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.header-link-nav{
+  color: var(--brand-cl);
+
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+}
+
+.header-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #ae1332;
+}
+
+@media only screen and (min-width: 768px) {
+   .header-logo{
+    margin-left: 94px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .header-logo{
+    margin-left: 322px;
+  }
+}
+
+.header-logo-icon,
+.header-basket-icon,
+.mobile-menu-icon-open{
   fill: #ae1332;
 }
+
+.header-text-wrapper{
+  font-weight: 700;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.header-btn-wrapper{
+  margin-left: auto;
+}
+
+.header-button{
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.basket-button{
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .basket-button{
+    display: flex;
+  }
+}
+
+
+
+
+
+
 .mobile-menu-icon-close {
   stroke: #ae1332;
+}
+
+   .mobile-menu-button{
+    display: none;
+  }
+
+@media only screen and (max-width: 767px) {
+   .mobile-menu-button{
+    display: flex;
+  }
 }
 
 .mobile-menu-button .mobile-menu-icon-close {
