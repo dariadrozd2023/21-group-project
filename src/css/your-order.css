@@ -18,7 +18,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
-  /* background-image: url(../img/opt-img/pop-up/girl-with-banana-tabl-w469@1x.png); */
+  background-image: url(../img/opt-img/pop-up/girl-with-banana-tabl-w469@1x.png);
   max-width: 395px;
 }
 .modal-close-btn {
