@@ -8,24 +8,24 @@
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
@@ -35,8 +35,8 @@
   padding-bottom: 150px;
 }
 .hero-container {
+  margin-top: 60px;
   padding-top: 154px;
-
 }
 
 @media screen and (min-width: 375px) and(max-width:767px) {
@@ -74,6 +74,7 @@
   top: 2%;
   left: -4%;
   transform: rotate(20deg);
+  z-index: 1;
 }
 @media only screen and (min-width: 768px) {
   .dec-babnan {
@@ -92,10 +93,11 @@
 @media only screen and (min-width: 1280px) {
   .dec-babnan {
     top: 11%;
-    left: -31%;
+    left: -34%;
     width: 183.21px;
     height: 124.61px;
     transform: rotate(20deg);
+    z-index: 0;
   }
   .dec-straw {
     top: -10%;
@@ -107,7 +109,7 @@
 /* url(../img/hero/imagebananas-background-mob@1.png),
     url(../img/hero/imagestrawberry-background-mob@1.png) 
 */
- 
+
 .hero-text {
   position: absolute;
   top: -10%;
@@ -122,8 +124,8 @@
 
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @media screen and (min-width: 768px) {
@@ -165,12 +167,12 @@
     height: 114px;
   }
 }
-.hero-btn:hover , 
+.hero-btn:hover,
 .hero-btn:focus {
   color: #a4cb66;
 }
 
-.hero-btn-txt{
+.hero-btn-txt {
   display: block;
 
   font-weight: 500;
@@ -187,14 +189,14 @@
   transition: color var(--anim-active-txt);
 }
 @media screen and (min-width: 768px) {
-  .hero-btn-txt{
+  .hero-btn-txt {
     font-size: 28px;
     line-height: 1;
   }
 }
 
-.hero-btn-txt:hover ,
-.hero-btn-txt:focus{
+.hero-btn-txt:hover,
+.hero-btn-txt:focus {
   color: currentColor;
 }
 
@@ -350,6 +352,7 @@
 @media screen and (min-width: 1280px) {
   .hero-cards {
     max-width: 1173px;
+    align-items: flex-end;
   }
   .hero-container-deck {
     padding-top: 104px;
@@ -358,40 +361,30 @@
 @media screen and (min-width: 1280px) {
   .hero-container {
     position: relative;
+    height: 948px;
+    padding-top: 353px;
   }
-  .wrap-position {
+
+  .background {
     position: absolute;
-    left: 0;
-    top: 41%;
+    left: 50%;
+    top: 11%;
+    transform: translatex(-50%);
   }
-  .wrap-cards {
-    position: absolute;
-    /* width: 281px; */
-    /* left: 0;
-    top: 41%; */
-  }
-  .low-wrap {
-    /* display: flex;
-    justify-content: center; */
-  }
-  .tag-list {
-    position: absolute;
-    right: 0;
-    top: 37%;
-  }
-  .low-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .top-card {
-    width: 100%;
-  }
-  .width {
-    width: 281px;
-  }
-  .hero-imglow {
-    height: 187px;
-    width: 239px;
-  }
+}
+
+.low-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-card {
+  width: 100%;
+}
+.width {
+  width: 281px;
+}
+.hero-imglow {
+  height: 187px;
+  width: 239px;
 }
