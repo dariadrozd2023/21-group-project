@@ -1,132 +1,132 @@
-<div class="backdrop js-overlay-modal">
-    <div class="modal-order">
+<div class="modal-order modal" data-modal="1">
+    <!-- <div class="modal-order "> -->
 
-        <!-- Close btn -->
-        <button class="modal-close-btn js-modal-close">
-            <svg class="modal-close-btn-icon" width="24" height="24">
-                <use href="./img/icons/icons.svg#icon-icon_close"></use>
-            </svg>
-        </button>
+    <!-- Close btn -->
+    <button class="modal-close-btn js-modal-close">
+        <svg class="modal-close-btn-icon" width="24" height="24">
+            <use href="./img/icons/icons.svg#icon-icon_close"></use>
+        </svg>
+    </button>
 
-        <p class="modal-order-title">Your Order</p>
+    <p class="modal-order-title">Your Order</p>
 
-        <!-- Basket cards -->
-        <ul class="modal-basket-list card-set list">
-            <li class="modal-basket-item card-set-item brown-item">
-                <div class="modal-basket-text-wrap">
-                    <p class="modal-basket-text">Strawberry Basket</p>
-                    <p class="modal-bascet-desk">Plant</p>
-                </div>
-                <picture>
-                    <!-- Desktop screen -->
-                    <source media="(min-width: 1280px)"
-                        srcset="../img/modal-your-order/strawberry-basket-w173@1x.png 1x, ../img/modal-your-order/strawberry-basket-w173@2x.png 2x"
-                        type="image/jpg" />
+    <!-- Basket cards -->
+    <ul class="modal-basket-list card-set list">
+        <li class="modal-basket-item card-set-item brown-item">
+            <div class="modal-basket-text-wrap">
+                <p class="modal-basket-text">Strawberry Basket</p>
+                <p class="modal-bascet-desk">Plant</p>
+            </div>
+            <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1280px)"
+                    srcset="../img/modal-your-order/strawberry-basket-w173@1x.png 1x, ../img/modal-your-order/strawberry-basket-w173@2x.png 2x"
+                    type="image/jpg" />
 
-                    <!-- Tablet screen -->
-                    <source media="(min-width: 768px)"
-                        srcset="../img/modal-your-order/strawberry-basket-w133@1x.png 1x, ../img/modal-your-order/strawberry-basket-w133@2x.png 2x"
-                        type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                    srcset="../img/modal-your-order/strawberry-basket-w133@1x.png 1x, ../img/modal-your-order/strawberry-basket-w133@2x.png 2x"
+                    type="image/jpg" />
 
-                    <!-- Mobile screen -->
-                    <source media="(max-width: 767px)"
-                        srcset="../img/modal-your-order/strawberry-basket-w88@1x.png 1x, ../img/modal-your-order/strawberry-basket-w88@2x.png 2x"
-                        type="image/png" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                    srcset="../img/modal-your-order/strawberry-basket-w88@1x.png 1x, ../img/modal-your-order/strawberry-basket-w88@2x.png 2x"
+                    type="image/png" />
 
-                    <img class="basket-img" src="../img/modal-your-order/strawberry-basket-w88@1x.png" alt="strawberry"
-                        width="88" height="95" loading="lazy" />
-                </picture>
+                <img class="basket-img" src="../img/modal-your-order/strawberry-basket-w88@1x.png" alt="strawberry"
+                    height="95" loading="lazy" />
+            </picture>
 
-                <label for="strawberry-basket" class="modal-basket-label">
-                    <input type="checkbox" name="basket" id="strawberry-basket" class="modal-basket-checkbox">
-                    </input>
-                </label>
-            </li>
-            <li class="modal-basket-item card-set-item yellow-item">
-                <div class="modal-basket-text-wrap">
-                    <p class="modal-basket-text">Apple Basket</p>
-                    <p class="modal-bascet-desk">Plant</p>
-                </div>
-                <picture>
-                    <!-- Desktop screen -->
-                    <source media="(min-width: 1280px)"
-                        srcset="../img/modal-your-order/apples-basket-w229@1x.png 1x, ../img/modal-your-order/apples-basket-w229@2x.png 2x"
-                        type="image/png" />
-
-                    <!-- Tablet screen -->
-                    <source media="(min-width: 768px)"
-                        srcset="../img/modal-your-order/apples-basket-w172@1x.png 1x, ../img/modal-your-order/apples-basket-w172@2x.png 2x"
-                        type="image/png" />
-
-                    <!-- Mobile screen -->
-                    <source media="(max-width: 767px)"
-                        srcset="../img/modal-your-order/apples-basket-w106@1x.png 1x, ../img/modal-your-order/apples-basket-w106@2x.png 2x"
-                        type="image/jpg" />
-
-                    <img class="basket-img" src="../img/modal-your-order/apples-basket-w106@1x.png" alt="apple"
-                        width="106" height="95" loading="lazy" />
-                </picture>
-
-                <label for="apple-basket" class="modal-basket-label">
-                    <input type="checkbox" name="basket" id="apple-basket" class="modal-basket-checkbox">
-                    </input>
-                </label>
-
-            </li>
-            <li class="modal-basket-item card-set-item green-item">
-                <div class="modal-basket-text-wrap">
-                    <p class="modal-basket-text">Fruits Basket</p>
-                    <p class="modal-bascet-desk">Plant</p>
-                </div>
-                <picture>
-                    <!-- Desktop screen -->
-                    <source media="(min-width: 1280px)"
-                        srcset="./img/modal-your-order/mix-fruits-w229@1x.png 1x, ./img/modal-your-order/mix-fruits-w229@2x.png 2x"
-                        type="image/png" />
-
-                    <!-- Tablet screen -->
-                    <source media="(min-width: 768px)"
-                        srcset="./img/modal-your-order/mix-fruits-w172@1x.png 1x, ./img/modal-your-order/mix-fruits-w172@2x.png 2x"
-                        type="image/png" />
-
-                    <!-- Mobile screen -->
-                    <source media="(max-width: 767px)"
-                        srcset="./img/modal-your-order/mix-fruits-w107@1x.png 1x, ./img/modal-your-order/mix-fruits-w107@2x.png 2x"
-                        type="image/jpg" />
-
-                    <img class="basket-img" src="./img/modal-your-order/mix-fruits-w107@1x.png" alt="fruits" width="229"
-                        height="95" loading="lazy" />
-                </picture>
-
-                <label for="fruits-basket" class="modal-basket-label">
-                    <input type="checkbox" name="basket" id="fruits-basket" class="modal-basket-checkbox">
-                    </input>
-                </label>
-
-            </li>
-        </ul>
-
-        <!-- User form -->
-        <form autocomplete="on" class="modal-fruits-form">
-            <label>
-                <input type="text" class="modal-fruit-input" name="user_name" placeholder="Enter full name..."
-                    pattern="([a-zA-Z]+\s){1,}([a-zA-Z]+)">
+            <label for="strawberry-basket" class="modal-basket-label">
+                <input type="checkbox" name="basket" id="strawberry-basket" class="modal-basket-checkbox">
+                </input>
             </label>
-            <label>
-                <input type="email" class="modal-fruit-input" name="user_email" placeholder="Enter email..."
-                    pattern="/^[\w\.-]+@[\w\.-]+\.\w+$/">
+        </li>
+        <li class="modal-basket-item card-set-item yellow-item">
+            <div class="modal-basket-text-wrap">
+                <p class="modal-basket-text">Apple Basket</p>
+                <p class="modal-bascet-desk">Plant</p>
+            </div>
+            <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1280px)"
+                    srcset="../img/modal-your-order/apples-basket-w229@1x.png 1x, ../img/modal-your-order/apples-basket-w229@2x.png 2x"
+                    type="image/png" />
+
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                    srcset="../img/modal-your-order/apples-basket-w172@1x.png 1x, ../img/modal-your-order/apples-basket-w172@2x.png 2x"
+                    type="image/png" />
+
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                    srcset="../img/modal-your-order/apples-basket-w106@1x.png 1x, ../img/modal-your-order/apples-basket-w106@2x.png 2x"
+                    type="image/jpg" />
+
+                <img class="basket-img" src="../img/modal-your-order/apples-basket-w106@1x.png" alt="apple" height="95"
+                    loading="lazy" />
+            </picture>
+
+            <label for="apple-basket" class="modal-basket-label">
+                <input type="checkbox" name="basket" id="apple-basket" class="modal-basket-checkbox">
+                </input>
             </label>
-            <label>
-                <input type="number" class="modal-fruit-input" name="user_card" placeholder="Enter card..."
-                    pattern="[0-9]{,12}" minlength="16" maxlength="16">
+
+        </li>
+        <li class="modal-basket-item card-set-item green-item">
+            <div class="modal-basket-text-wrap">
+                <p class="modal-basket-text">Fruits Basket</p>
+                <p class="modal-bascet-desk">Plant</p>
+            </div>
+            <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1280px)"
+                    srcset="./img/modal-your-order/mix-fruits-w229@1x.png 1x, ./img/modal-your-order/mix-fruits-w229@2x.png 2x"
+                    type="image/png" />
+
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                    srcset="./img/modal-your-order/mix-fruits-w172@1x.png 1x, ./img/modal-your-order/mix-fruits-w172@2x.png 2x"
+                    type="image/png" />
+
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                    srcset="./img/modal-your-order/mix-fruits-w107@1x.png 1x, ./img/modal-your-order/mix-fruits-w107@2x.png 2x"
+                    type="image/jpg" />
+
+                <img class="basket-img" src="./img/modal-your-order/mix-fruits-w107@1x.png" alt="fruits" height="95"
+                    loading="lazy" />
+            </picture>
+
+            <label for="fruits-basket" class="modal-basket-label">
+                <input type="checkbox" name="basket" id="fruits-basket" class="modal-basket-checkbox">
+                </input>
             </label>
-            <label>
-                <textarea class="modal-fruits-textaria" name="user_comment" cols="30" rows="10"
-                    placeholder="Enter comments...">
+
+        </li>
+    </ul>
+
+    <!-- User form -->
+    <form autocomplete="on" class="modal-fruits-form">
+        <label>
+            <input type="text" class="modal-fruit-input" name="user_name" placeholder="Enter full name..."
+                pattern="([a-zA-Z]+\s){1,}([a-zA-Z]+)">
+        </label>
+        <label>
+            <input type="email" class="modal-fruit-input" name="user_email" placeholder="Enter email..."
+                pattern="/^[\w\.-]+@[\w\.-]+\.\w+$/">
+        </label>
+        <label>
+            <input type="number" class="modal-fruit-input" name="user_card" placeholder="Enter card..."
+                pattern="[0-9]{,12}" minlength="16" maxlength="16">
+        </label>
+        <label>
+            <textarea class="modal-fruits-textaria" name="user_comment" cols="30" rows="10"
+                placeholder="Enter comments...">
                 </textarea>
-            </label>
+        </label>
 
-            <button class="modal-fruits-button" type="submit">Submit</button>
-        </form>
-    </div>
+        <button class="modal-fruits-button" type="submit">Submit</button>
+    </form>
+    <!-- </div> -->
 </div>

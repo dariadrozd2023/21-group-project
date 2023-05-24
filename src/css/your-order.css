@@ -1,4 +1,4 @@
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,52 +13,63 @@
   pointer-events: initial;
 
   transition: opacity 200ms ease, visibility 200ms ease,
-    backdrop-filter 200ms ease;
-}
+  backdrop-filter 200ms ease;
+} */
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 
   transition-delay: 400ms;
-}
+} */
 
 .modal-order {
-  position: absolute;
+  /* position: relative; */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(0) scale(1);
-  opacity: 1;
+  /* transform: translate(-50%, -50%) rotate(0) scale(1);
+  opacity: 1; */
 
-  width: 395px;
-  min-height: 903px;
+  width: 335px;
+  /* min-height: 903px; */
   padding: 20px;
 
   background-color: #ffffff;
   border-radius: 20px;
 
-  background-image: url(../img/opt-img/pop-up/girl-with-banana-tabl-w469@1x.png);
-  max-width: 395px;
+  /* background-image: url(../img/opt-img/pop-up/girl-with-banana-tabl-w469@1x.png); */
+  /* max-width: 395px; */
 }
 @media only screen and (max-width: 474px) {
   .modal-order {
     min-width: 320px;
     max-width: 395px;
+    /* background-image: url(../img/opt-img/pop-up/girl-with-banana-tabl-w469@1x.png); */
   }
 }
 @media only screen and (min-width: 768px) {
   .modal-order {
-    width: 704px;
-    min-height: 853px;
+    min-width: 704px;
     padding: 40px;
+      background-image: url(./img/modal-your-order/girl-with-banana-w469@1x.png);
+      background-repeat: no-repeat;
+      background-position: 175% 100%;
   }
 }
 
-.backdrop.is-hidden .modal-order {
+  @media only screen and (min-width: 1280px) {
+  .modal-order {
+    min-width: 891px;
+
+    background-position: 100% 100%;
+  }
+}
+
+/* .backdrop.is-hidden .modal-order {
   transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
   opacity: 0;
-}
+} */
 
 .modal-close-btn {
   position: absolute;
@@ -146,6 +157,12 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .modal-basket-item {
+    max-width: 257px;
+  }
+}
+
 /* BG CARDS */
 .brown-item {
   background-color: #f8766b;
@@ -172,6 +189,8 @@
   color: #ffffff;
 
   margin-bottom: 2px;
+
+  text-align: left;
 }
 
 .modal-bascet-desk {
@@ -180,6 +199,7 @@
   letter-spacing: -0.02em;
 
   color: #ffffff;
+  text-align: left;
 }
 @media only screen and (min-width: 768px) {
   .modal-bascet-desk {
@@ -190,6 +210,8 @@
 @media only screen and (min-width: 768px) {
   .basket-img {
     margin: 0 auto;
+
+    height: 148px;
   }
 }
 
@@ -225,7 +247,7 @@
 }
 
 .modal-fruit-input {
-  width: 100%;
+  min-width: 295px;
   padding: 14px 24px;
   margin-bottom: 14px;
 
@@ -238,6 +260,14 @@
   border-radius: 100px;
 }
 
+@media only screen and (min-width: 768px) {
+   .modal-fruit-input{
+    min-width: 360px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
 .modal-fruit-input:invalid {
   outline: 2px solid rgb(255, 0, 0, 0.6);
 }
@@ -247,7 +277,7 @@
   padding: 14px 24px;
   margin-bottom: 20px;
 
-  width: 100%;
+  min-width: 295px;
   min-height: 132px;
   max-height: 180px;
 
@@ -260,6 +290,14 @@
 
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+   .modal-fruits-textaria{
+    min-width: 360px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .modal-fruits-button {
@@ -285,6 +323,12 @@
 .modal-fruits-button:focus {
   background-color: #ffffff;
   color: #9dc162;
+}
+
+.modal-fruits-form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* @media screen and (min-width: 768px) {
