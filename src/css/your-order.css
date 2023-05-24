@@ -52,7 +52,7 @@
   .modal-order {
     min-width: 704px;
     padding: 40px;
-    background-image: url(./img/modal-your-order/girl-with-banana-w469@1x.png);
+    background-image: url(../img/modal-your-order/girl-with-banana-w469@1x.png);
     background-repeat: no-repeat;
     background-position: 175% 100%;
   }
@@ -60,7 +60,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .modal-order {
-      background-image: url('./img/modal-your-order/girl-with-banana-w469@2x.png');
+      background-image: url('../img/modal-your-order/girl-with-banana-w469@2x.png');
     }
   }
 }
@@ -68,7 +68,7 @@
 @media only screen and (min-width: 1280px) {
   .modal-order {
     min-width: 891px;
-    background-image: url(./img/modal-your-order/girl-with-banana-w471@1x.png);
+    background-image: url(../img/modal-your-order/girl-with-banana-w471@1x.png);
     background-position: 100% 100%;
   }
 }
@@ -76,7 +76,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .modal-order {
-    background-image: url('./img/modal-your-order/girl-with-banana-w471@2x.png');
+    background-image: url('../img/modal-your-order/girl-with-banana-w471@2x.png');
   }
 }
 
