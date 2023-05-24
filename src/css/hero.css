@@ -74,6 +74,7 @@
   top: 2%;
   left: -4%;
   transform: rotate(20deg);
+  z-index: 1;
 }
 @media only screen and (min-width: 768px) {
   .dec-babnan {
@@ -92,10 +93,11 @@
 @media only screen and (min-width: 1280px) {
   .dec-babnan {
     top: 11%;
-    left: -31%;
+    left: -34%;
     width: 183.21px;
     height: 124.61px;
     transform: rotate(20deg);
+    z-index: 0;
   }
   .dec-straw {
     top: -10%;
@@ -350,6 +352,7 @@
 @media screen and (min-width: 1280px) {
   .hero-cards {
     max-width: 1173px;
+    align-items: flex-end;
   }
   .hero-container-deck {
     padding-top: 104px;
@@ -358,8 +361,10 @@
 @media screen and (min-width: 1280px) {
   .hero-container {
     position: relative;
-    height: 849px;
+    height: 948px;
+    padding-top: 353px;
   }
+
   .background {
     position: absolute;
     left: 50%;
@@ -367,26 +372,7 @@
     transform: translatex(-50%);
   }
 }
-.wrap-position {
-  /* position: absolute;
-    left: 0;
-    top: 41%; */
-}
-.wrap-cards {
-  /* position: absolute; */
-  /* width: 281px; */
-  /* left: 0;
-    top: 41%; */
-}
-.low-wrap {
-  /* display: flex;
-    justify-content: center; */
-}
-.tag-list {
-  /* position: absolute;
-    right: 0;
-    top: 37%; */
-}
+
 .low-card {
   display: flex;
   flex-direction: column;
