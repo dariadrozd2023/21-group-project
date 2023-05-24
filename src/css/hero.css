@@ -33,10 +33,9 @@
   }
 }
 
-
 .hero-container {
   margin-top: 60px;
-  padding-top: 154px;
+  padding-top: 102px;
 }
 
 @media screen and (min-width: 375px) and(max-width:767px) {
@@ -328,7 +327,6 @@
 
   .wrap-cards {
     margin-bottom: 0;
-
   }
 
   .tag-list {
@@ -337,8 +335,6 @@
     flex-direction: column-reverse;
   }
 }
-
-
 
 @media screen and (min-width: 768px) {
   .tags {
