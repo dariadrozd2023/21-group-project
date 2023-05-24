@@ -92,7 +92,14 @@
   right: 0;
 
   transition: background-color var(--anim-active-bg), color var(--anim-active-txt);
+
+  pointer-events: none;
 }
+
+.contacts-input:valid + .contacts-button{
+  pointer-events: all;
+}
+
 
 .contacts-button:hover,
 .contacts-button:focus{

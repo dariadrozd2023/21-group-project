@@ -32,10 +32,11 @@
 
 .hero {
   background: #ae1332;
+  padding-bottom: 150px;
 }
 .hero-container {
   padding-top: 154px;
-  margin-bottom: 150px;
+
 }
 
 @media screen and (min-width: 375px) and(max-width:767px) {
